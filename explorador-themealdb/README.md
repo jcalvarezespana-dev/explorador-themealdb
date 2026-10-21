@@ -35,7 +35,25 @@ Para generar la versión de producción: `npm run build`.
 
 ## Capturas de pantalla
 
-Agregar aquí las capturas (inicio, lista, detalle, favoritos, registro y vista en celular).
+Agregar aquí las capturas 
+inicio<img width="1600" height="772" alt="image" src="https://github.com/user-attachments/assets/e8792bac-3101-4f13-90e9-7c205bd28dd5" />
+
+
+lista<img width="1600" height="773" alt="image" src="https://github.com/user-attachments/assets/253de00f-3bde-4c36-9a19-6af5c7a75eaa" />
+
+
+detalle<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/42d04624-4621-4532-8abf-9d0465f223f2" />
+
+
+favoritos<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/3675845c-7258-4887-9125-c894d710e735" />
+
+
+registro<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/a70788a3-575f-4fb9-872e-b4082b59b3dc" />
+
+
+vista en celuar
+
+
 
 ## Integrantes
 
