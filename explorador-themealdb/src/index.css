@@ -1,0 +1,140 @@
+:root {
+  --fondo: #f4f1f6;
+  --superficie: #ffffff;
+  --tinta: #2a1b2e;
+  --tinta-suave: #5d4b63;
+  --portal: #f4b63f;
+  --portal-oscuro: #7a4f00;
+  --borde: #d9cfdf;
+  --peligro: #b42318;
+  --exito: #1b6e3a;
+  --aviso: #b54708;
+  --fuente: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  background: var(--fondo);
+  color: var(--tinta);
+  line-height: 1.5;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--portal-oscuro); }
+h1 { font-size: clamp(1.7rem, 4vw, 2.6rem); line-height: 1.1; margin: 0 0 1rem; font-weight: 800; }
+h2 { font-size: 1.3rem; margin: 0 0 0.75rem; }
+h3 { font-size: 1.05rem; margin: 0.6rem 0 0.2rem; }
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.contenido { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem 2.5rem; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background: var(--tinta);
+}
+.marca { color: #fff; text-decoration: none; font-weight: 800; font-size: 1.25rem; }
+.marca span { color: var(--portal); }
+.enlaces { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.enlace { color: #e3d6e8; text-decoration: none; padding: 0.25rem 0; border-bottom: 3px solid transparent; }
+.enlace:hover { color: #fff; }
+.enlace.activo { color: #fff; border-bottom-color: var(--portal); }
+.contador { background: var(--portal); color: var(--tinta); border-radius: 999px; padding: 0 0.5rem; font-size: 0.8rem; margin-left: 0.2rem; }
+
+.footer { background: var(--tinta); color: #e3d6e8; padding: 1rem; text-align: center; font-size: 0.9rem; }
+.footer p { margin: 0.15rem 0; }
+.footer a { color: var(--portal); }
+
+.boton {
+  display: inline-block;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--tinta);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.boton-activo { background: var(--portal); color: var(--tinta); }
+.boton-claro { background: var(--superficie); color: var(--tinta); }
+.boton-peligro { background: var(--superficie); color: var(--peligro); border-color: var(--peligro); }
+.boton:disabled { opacity: 0.45; cursor: not-allowed; }
+.boton:focus-visible, .campo:focus-visible, a:focus-visible { outline: 3px solid var(--portal-oscuro); outline-offset: 2px; }
+
+.campo {
+  font: inherit;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--borde);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--tinta);
+}
+
+.inicio { max-width: 680px; padding: 2rem 0; }
+.inicio p { font-size: 1.1rem; color: var(--tinta-suave); }
+.inicio .boton { margin-top: 0.75rem; }
+
+.filtros { display: grid; grid-template-columns: 2fr 1fr; gap: 0.75rem; margin-bottom: 1rem; }
+.total { color: var(--tinta-suave); margin: 0 0 0.75rem; }
+
+.grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1rem; }
+.tarjeta { background: var(--superficie); border: 2px solid var(--borde); border-radius: 16px; padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.tarjeta img { border-radius: 10px; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.tarjeta-enlace { color: inherit; text-decoration: none; }
+.tarjeta-datos { margin: 0; display: flex; align-items: center; gap: 0.5rem; color: var(--tinta-suave); flex: 1; }
+.tarjeta .boton { width: 100%; font-size: 0.9rem; padding: 0.45rem 0.6rem; }
+
+.categoria { font-size: 0.85rem; font-weight: 600; padding: 0.1rem 0.7rem; border-radius: 999px; background: var(--portal); color: var(--tinta); }
+
+.paginacion { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+
+.mensaje { padding: 0.8rem 1rem; border-radius: 10px; margin: 0.75rem 0 1rem; border-left: 6px solid var(--tinta-suave); background: var(--superficie); }
+.mensaje-error { border-left-color: var(--peligro); color: var(--peligro); }
+.mensaje-exito { border-left-color: var(--exito); color: var(--exito); }
+.mensaje-info { border-left-color: var(--aviso); }
+
+.detalle { display: grid; grid-template-columns: minmax(220px, 360px) 1fr; gap: 2rem; align-items: start; }
+.detalle img { border-radius: 16px; border: 2px solid var(--borde); width: 100%; }
+.detalle dl { margin: 0 0 1.25rem; }
+.detalle dl div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; border-bottom: 1px solid var(--borde); }
+.detalle dt { color: var(--tinta-suave); }
+.detalle dd { margin: 0; font-weight: 600; text-align: right; }
+.detalle-botones { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+.receta { margin-top: 2rem; max-width: 820px; }
+.receta p { margin: 0 0 0.9rem; }
+.ingredientes { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
+.ingredientes li { background: var(--superficie); border: 2px solid var(--borde); border-radius: 10px; padding: 0.5rem 0.75rem; display: grid; }
+.ingredientes span { color: var(--tinta-suave); }
+
+.registro-columnas { display: grid; grid-template-columns: minmax(260px, 380px) 1fr; gap: 2rem; align-items: start; }
+.formulario { background: var(--superficie); border: 2px solid var(--borde); border-radius: 16px; padding: 1.25rem; display: grid; gap: 1rem; }
+.formulario label { display: grid; gap: 0.3rem; font-weight: 600; }
+.formulario-botones { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.usuarios ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.usuario { background: var(--superficie); border: 2px solid var(--borde); border-radius: 12px; padding: 0.8rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.usuario div:first-child { display: grid; min-width: 0; }
+.usuario span { color: var(--tinta-suave); overflow-wrap: anywhere; }
+.usuario-botones { display: flex; gap: 0.5rem; }
+.vacio { color: var(--tinta-suave); }
+
+@media (max-width: 800px) {
+  .detalle, .registro-columnas { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .filtros { grid-template-columns: 1fr; }
+  .usuario { flex-direction: column; align-items: stretch; }
+  .usuario-botones .boton { flex: 1; }
+  .detalle-botones .boton { flex: 1; }
+  .navbar { flex-direction: column; align-items: flex-start; }
+}
