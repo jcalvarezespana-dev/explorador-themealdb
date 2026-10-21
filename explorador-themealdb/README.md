@@ -42,16 +42,21 @@ inicio<img width="1600" height="772" alt="image" src="https://github.com/user-at
 lista<img width="1600" height="773" alt="image" src="https://github.com/user-attachments/assets/253de00f-3bde-4c36-9a19-6af5c7a75eaa" />
 
 
-detalle<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/42d04624-4621-4532-8abf-9d0465f223f2" />
-
-
 favoritos<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/3675845c-7258-4887-9125-c894d710e735" />
 
 
 registro<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/a70788a3-575f-4fb9-872e-b4082b59b3dc" />
 
 
-vista en celuar
+vista en celuar<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/a4e979b9-7f57-46f4-a69f-1b3f42614827" />
+
+
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/c0740c79-ed29-40b2-81ad-b4df9994bc7d" />
+
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/34c47ff5-4328-4fcb-ab86-4f4c975daf57" />
+
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/468c419c-a96e-4add-9f01-4121d4402323" />
+
 
 
 
